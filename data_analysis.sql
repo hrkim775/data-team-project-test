@@ -10,3 +10,10 @@ CREATE TABLE costomer (
 );
 
 SELECT * FROM customer;
+
+-- B : 성별 고객수 분석
+SELECT 
+	gender,
+    COUNT(*) customer_count
+FROM cutomer
+GROUP BY gender;
