@@ -10,3 +10,15 @@ CREATE TABLE costomer (
 );
 
 SELECT * FROM customer;
+
+-- A : 연령대별 고객 수 분석 쿼리문
+SELECT 
+	CASE
+		WHEN age < 20 THEN '10대 이하'
+        WHEN age < 30 THEN '20대'
+        WHEN age < 40 THEN '30대'
+        ELSE '40대 이상'
+	END age_group,
+    COUNT(*) customer_count
+FROM customer_db
+GROUP BY age_gtoup;
