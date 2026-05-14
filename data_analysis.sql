@@ -11,6 +11,7 @@ CREATE TABLE costomer (
 
 SELECT * FROM customer;
 
+<<<<<<< HEAD
 -- A : 연령대별 고객 수 분석 쿼리문
 SELECT 
 	CASE
@@ -22,3 +23,11 @@ SELECT
     COUNT(*) customer_count
 FROM customer_db
 GROUP BY age_gtoup;
+=======
+-- B : 성별 고객수 분석
+SELECT 
+	gender,
+    COUNT(*) customer_count
+FROM cutomer
+GROUP BY gender;
+>>>>>>> origin/ES
